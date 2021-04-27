@@ -1,0 +1,4 @@
+  
+export const ADD_DATA_USER = 'ADD_DATA_USER'
+export const REMOVE_DATA_USER = 'REMOVE_DATA_USER'
+export const SET_DATA_USER = 'SET_DATA_USER'
