@@ -1,5 +1,3 @@
-# Front End Coding Test PT Code Development Indonesia
-
 # Description
 Simple CRUD web application with ReactJS.
 There is only 1 route to perform all actions.
