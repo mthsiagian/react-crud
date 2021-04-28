@@ -1,17 +1,10 @@
-import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import ContactList from './views/homeScreen';
-import Contact from './views/contact';
+import Crud from './component/crud';
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route path={"/"} exact component={ContactList}></Route>
-        <Route path={"/contact/:id"} exact component={Contact}></Route>
-        <Redirect to={"/"}/>
-      </Switch>
-      test
+      <Crud/>
     </div>
   );
 }
