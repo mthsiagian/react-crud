@@ -59,6 +59,7 @@ const Crud = () => {
         const contact = await getContact(id);
         dispatch(setDataUser(contact.data));
         setisEditing(true);
+        window.scrollTo(0, 0)
     }
 
     
