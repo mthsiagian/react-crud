@@ -16,6 +16,7 @@ const CreateData = props => {
 
   return (
     <div className={classes.formWrapper}>
+      <h1>Contact Form</h1>
       <form onSubmit={addData}>
         <TextField
           id="name-id"

@@ -41,10 +41,14 @@ const Crud = () => {
         }
 
         const payload = Object.assign({}, { firstName, lastName, age, photo });
-        if(id) {
-            await patchUser(id, payload);
-        } else{
-            await postUser(payload);
+        try {
+            if(id) {
+                await patchUser(id, payload);
+            } else{
+                await postUser(payload);
+            }
+        } catch(err) {
+            alert(`Error: ${err.message}`)
         }
 
         serviceListContacts();
@@ -95,7 +99,11 @@ const Crud = () => {
     }
 
     const removeData = async (id) => {
-        await deleteUser(id);
+        try {
+            await deleteUser(id);
+        } catch (err) {
+            alert(`Error: ${err.message}`)
+        }
         serviceListContacts();
     }
 
